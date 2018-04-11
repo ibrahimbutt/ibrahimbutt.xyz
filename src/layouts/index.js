@@ -8,13 +8,12 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Ibrahim Butts Blog' },
-        { name: 'keywords', content: 'javascript, programming, medium' },
+        { name: "description", content: "Ibrahim Butts Blog" },
+        { name: "keywords", content: "javascript, programming, medium" }
       ]}
     />
 
     {children()}
-
   </div>
 );
 

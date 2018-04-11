@@ -11,7 +11,7 @@ const Container = styled.div`
   align-content: center;
   grid-template-rows: repeat(3, min-content);
   @media (max-width: 540px) {
-      padding: 0 20px ; 
+    padding: 0 20px;
   }
 `;
 
@@ -39,7 +39,7 @@ const Text = styled.p`
 
 const Form = styled.form`
   display: grid;
-  grid-template-columns: 1fr auto ;
+  grid-template-columns: 1fr auto;
   grid-template-rows: min-content;
   max-width: 420px;
   width: 100%;

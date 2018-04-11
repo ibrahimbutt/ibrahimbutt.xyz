@@ -4,7 +4,7 @@ import UnderConstructionPage from "./under-construction";
 
 const IndexPage = () => (
   <div>
-    <UnderConstructionPage/>
+    <UnderConstructionPage />
   </div>
 );
 
