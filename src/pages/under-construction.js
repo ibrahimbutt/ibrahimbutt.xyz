@@ -56,8 +56,8 @@ const Email = styled.input.attrs({
 })`
   background-color: #fdf9fe;
   border: 2px solid #663399;
-  font-size: 14px;
-  padding: 10px 11px 8px 11px;
+  font-size: 16px; 
+  padding: 11px 11px 7px 11px;
   text-transform: uppercase;
   font-family: "Plex Mono";
   font-weight: 500;
