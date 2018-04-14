@@ -63,6 +63,8 @@ const Email = styled.input.attrs({
   font-weight: 500;
   line-height: 1;
   width: 100%;
+  -webkit-appearance: none;
+  border-radius: 0;
 `;
 
 const Submit = styled.button.attrs({
