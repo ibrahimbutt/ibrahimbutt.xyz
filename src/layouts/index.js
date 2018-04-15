@@ -18,9 +18,10 @@ const Layout = ({ children, data }) => (
         { name: "keywords", content: "javascript, programming, medium" }
       ]}
     />
-    {!window.location.href.match(/\/$/g) && (
+    {!window.location.href.match(/\d\/$/g) && (
       <Header title={data.site.siteMetadata.title} />
     )}
+    {console.log(window.location.href)}
     <Container>{children()}</Container>
   </div>
 );

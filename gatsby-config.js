@@ -10,6 +10,14 @@ module.exports = {
         precision: 8
       }
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/`,
+        name: `src`
+      }
+    },
+    `gatsby-transformer-remark`,
   ]
 };
