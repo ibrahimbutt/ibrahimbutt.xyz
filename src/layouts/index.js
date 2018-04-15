@@ -1,8 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
+import Header from "../components/header";
 import "../sass/main.sass";
+import styled from "styled-components";
 
+const Container = styled.div`
+  max-width: 740px;
+  margin: 0 auto;
+`;
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
@@ -12,8 +18,10 @@ const Layout = ({ children, data }) => (
         { name: "keywords", content: "javascript, programming, medium" }
       ]}
     />
-
-    {children()}
+    {!window.location.href.match(/\/$/g) && (
+      <Header title={data.site.siteMetadata.title} />
+    )}
+    <Container>{children()}</Container>
   </div>
 );
 
