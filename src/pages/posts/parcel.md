@@ -52,3 +52,8 @@ Parcel is the winner in the context of zero-config.
 Based on a reasonably sized app, containing 1726 modules, 6.5M uncompressed. Built on a 2016 MacBook Pro with 4 physical cores.
 
 Webpack 4 uses a cache too, which helps with faster build times, but it’s not completely implemented yet.
+
+```javascript
+const lol = 123;
+console.log(lol)
+```

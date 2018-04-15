@@ -1,4 +1,5 @@
 import React from "react";
+require("prismjs/themes/prism-tomorrow.css");
 
 export default ({ data }) => {
   const post = data.markdownRemark;
