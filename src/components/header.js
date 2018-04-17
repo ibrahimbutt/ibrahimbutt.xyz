@@ -25,11 +25,6 @@ const Title = styled.h1`
   line-height: 14px;
   text-transform: lowercase;
   margin: 0;
-  /* &:before,
-  &:after {
-    content: "\`";
-    color: #bd10e0;
-  } */
   a {
     color: #000;
   }

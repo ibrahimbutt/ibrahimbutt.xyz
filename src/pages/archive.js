@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
+import Header from "../components/header";
+
+
 
 const Image = styled.img`
   width: 100%;
@@ -52,7 +55,10 @@ const Article = styled.div`
 export default ({ data }) => {
   console.log(data);
   return (
+    <div>
+    <Header title={data.site.siteMetadata.title} />
     <Container>
+      
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <Article key={node.id}>
           <Link to={node.fields.slug}>
@@ -63,11 +69,18 @@ export default ({ data }) => {
         </Article>
       ))}
     </Container>
+    </div>
   );
 };
 
 export const query = graphql`
+
   query IndexQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
