@@ -1,12 +1,13 @@
 ---
-title: "What I learned about life and happiness doing MITs 6.00.1x"
+title: "Getting Images into Markdown Documents and Weblog Posts with Markdown Monster"
 date: "2017-09-10"
-featuredImage: "./image2.jpg"
+featuredImage: "./image3.jpg"
 ---
-# If you’ve ever configured Webpack, Parcel will blow your mind!
+# Getting Images into Markdown Documents and Weblog Posts with Markdown Monster
 ## And how to hit the ground running with Parcel.
 
-In this post I will walk you through using Parcel, with Pug, Sass, Babel and PostCSS. With some comparisons to Webpack, as its the most popular module bundler.
+One good justification for using a rich editor for editing Markdown or a Weblog entry is that you can provide some additional features above and beyond what a simple text or code editor can provide. When you’re creating content you are usually dealing with a number of things beyond plain text like code snippets, feature widgets and most importantly — images.
+
 
 ---
 

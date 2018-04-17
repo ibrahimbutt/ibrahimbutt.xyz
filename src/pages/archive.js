@@ -3,24 +3,67 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 
 const Image = styled.img`
-  width: 300px;
+  width: 100%;
   border-radius: 4px;
+  transition: opacity .25s ease;
 `;
+
+const Container = styled.div`
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    grid-row-gap: 25px;
+  }
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+    padding: 25px;
+    grid-row-gap: 25px;
+  }
+`;
+
+const Title = styled.h2`
+  font-family: "Plex Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #000;
+  padding: 20px 10px 10px 10px;
+`;
+
+const Text = styled.h2`
+  font-family: "Plex Sans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #797C80;
+  padding: 0 10px;  
+`;
+
+const Article = styled.div`
+  :hover img {
+    opacity: .5;
+  }
+`;
+
 
 export default ({ data }) => {
   console.log(data);
   return (
-    <div>
+    <Container>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
+        <Article key={node.id}>
           <Link to={node.fields.slug}>
             <Image src={node.frontmatter.featuredImage.publicURL} />
-            <h2>{node.frontmatter.title}</h2>
-            <p>{node.frontmatter.excerpt}</p>
+            <Title>{node.frontmatter.title}</Title>
+            <Text>{node.excerpt}</Text>
           </Link>
-        </div>
+        </Article>
       ))}
-    </div>
+    </Container>
   );
 };
 

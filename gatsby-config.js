@@ -58,6 +58,6 @@ module.exports = {
           `gatsby-remark-prismjs`,
         ]
       }
-    }
+    },
   ]
 };

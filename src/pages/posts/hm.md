@@ -1,17 +1,19 @@
 ---
-title: "What I learned about life and happiness doing MITs 6.00.1x"
-date: "2017-09-10"
-featuredImage: "./image2.jpg"
+title: "The Use of Psychology in Deceptive Software Design"
+date: "2017-012-10"
+featuredImage: "./image4.jpg"
 ---
-# If you’ve ever configured Webpack, Parcel will blow your mind!
+# The Use of Psychology in Deceptive Software Design
 ## And how to hit the ground running with Parcel.
 
-In this post I will walk you through using Parcel, with Pug, Sass, Babel and PostCSS. With some comparisons to Webpack, as its the most popular module bundler.
+Websites and mobile applications are often designed to entice or persuade consumers and users to behave in certain ways, such as signing up for services or purchasing products and services. Most of these products use common industry user interface (UI) and user experience (UX) design techniques that are based on our knowledge of human psychology and a body of knowledge regarding common design techniques and patterns.
 
 ---
 
 ## Zero Configuration: Webpack Vs Parcel
 ### Webpack
+
+![Alt text](image4.jpg)
 
 Version 4 is ‘zero-config’.
 
@@ -53,3 +55,8 @@ Parcel is the winner in the context of zero-config.
 Based on a reasonably sized app, containing 1726 modules, 6.5M uncompressed. Built on a 2016 MacBook Pro with 4 physical cores.
 
 Webpack 4 uses a cache too, which helps with faster build times, but it’s not completely implemented yet.
+
+```javascript
+const lol = 123;
+console.log(lol)
+```
