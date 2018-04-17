@@ -1,7 +1,7 @@
 ---
 title: "What I learned about life and happiness doing MITs 6.00.1x"
 date: "2017-09-10"
-# layout: post
+featuredImage: "./image.jpg"
 ---
 # If you’ve ever configured Webpack, Parcel will blow your mind!
 ## And how to hit the ground running with Parcel.
