@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Image = styled.img`
   width: 100%;
   border-radius: 4px;
-  transition: opacity .25s ease;
+  transition: opacity 0.25s ease;
 `;
 
 const Container = styled.div`
@@ -39,16 +39,15 @@ const Text = styled.h2`
   font-weight: 400;
   font-size: 15px;
   line-height: 1.7;
-  color: #797C80;
-  padding: 0 10px;  
+  color: #797c80;
+  padding: 0 10px;
 `;
 
 const Article = styled.div`
   :hover img {
-    opacity: .5;
+    opacity: 0.5;
   }
 `;
-
 
 export default ({ data }) => {
   console.log(data);

@@ -18,8 +18,8 @@ const Layout = ({ children, data }) => (
         { name: "keywords", content: "javascript, programming, medium" }
       ]}
     />
-      <Header title={data.site.siteMetadata.title} />
-  {children()}
+    <Header title={data.site.siteMetadata.title} />
+    {children()}
   </div>
 );
 

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const HeaderContainer = styled.header`
   padding: 50px;
-  padding-bottom: 0;  
+  padding-bottom: 0;
   display: grid;
   grid-template-columns: min-content auto;
   @media (max-width: 960px) {
