@@ -3,10 +3,14 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 
 const HeaderContainer = styled.header`
-  padding: 25px 40px 20px 40px;
+  padding: 50px;
+  padding-bottom: 0;  
   display: grid;
   grid-template-columns: min-content auto;
-  border-bottom: 1px solid #e8e8e8;
+  @media (max-width: 960px) {
+    padding: 25px;
+    padding-bottom: 0;
+  }
   @media (max-width: 400px) {
     grid-template-columns: 1fr;
     grid-row-gap: 20px;
@@ -14,18 +18,18 @@ const HeaderContainer = styled.header`
   }
 `;
 const Title = styled.h1`
-  font-family: "Plex Mono";
+  font-family: "Plex Sans";
   font-weight: 500;
   font-size: 14px;
   text-align: center;
   line-height: 14px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   margin: 0;
-  &:before,
+  /* &:before,
   &:after {
     content: "\`";
     color: #bd10e0;
-  }
+  } */
   a {
     color: #000;
   }
@@ -38,12 +42,12 @@ const Nav = styled.nav`
   grid-column-gap: 20px;
   text-align: right;
   a {
-    font-family: "Plex Mono";
+    font-family: "Plex Sans";
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
     color: #999;
-    text-transform: uppercase;
+    text-transform: lowercase;
     transition: color 0.5s ease;
   }
   a:hover {
