@@ -1,15 +1,14 @@
 ---
-title: "If you’ve ever configured Webpack, Parcel will blow your mind!"
+title: "this: If you’ve ever configured Webpack, Parcel will blow your mind!"
 date: "2017-012-10"
 featuredImage: "./image.jpg"
 ---
 # If you’ve ever configured Webpack, Parcel will blow your mind!
 ## And how to hit the ground running with Parcel.
 
+![salted duck eggs](./image2.jpg)
+
 In this post I will walk you through using Parcel, with Pug, Sass, Babel and PostCSS. With some comparisons to Webpack, as its the most popular module bundler.
-
----
-
 ## Zero Configuration: Webpack Vs Parcel
 ### Webpack
 

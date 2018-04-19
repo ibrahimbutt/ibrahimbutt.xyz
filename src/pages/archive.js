@@ -12,6 +12,8 @@ const Image = styled.img`
 `;
 
 const Container = styled.div`
+  max-width: 1340px;
+  margin: 0 auto;
   padding: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

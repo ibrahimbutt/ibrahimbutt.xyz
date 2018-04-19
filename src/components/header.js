@@ -41,7 +41,7 @@ const Nav = styled.nav`
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
-    color: #999;
+    color: #797C80;
     text-transform: lowercase;
     transition: color 0.5s ease;
   }
