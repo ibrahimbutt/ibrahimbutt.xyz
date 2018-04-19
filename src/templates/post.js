@@ -6,47 +6,66 @@ import "prismjs/themes/prism-tomorrow.css";
 
 const Markdown = styled.div`
   max-width: 740px;
-  margin: 50px auto;
+  margin: 2.777rem auto;
   color: rgba(0, 0, 0, 0.84);
+  @media (max-width: 740px) {
+    padding: 1.388rem;
+    margin: 0;
+  }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: "Plex Sans";
     font-weight: 500;
     line-height: 1.25;    
-    margin-bottom: 15px;
+    margin-bottom: 0.833rem;
   }
   
   h1 {
-    font-size: 42px;
+    font-size: 2.369rem;
     font-weight: 600; 
   }
-  h1 + h2 {
-    color: #797C80;
-    margin-bottom: 50px;
-    font-weight: 400;
 
-  }
   h2 {
-    font-size: 24px;
+    font-size: 1.777rem;
   }
+
   h3 {
-    font-size: 20px;
+    font-size: 1.333rem;
   }
+
+  h1:not(:first-of-type) {
+    font-size: 2.369rem;
+  }
+
+  h1:first-of-type + h2 {
+    color: #797C80;
+    margin-bottom: 2.777rem;
+    font-weight: 400;
+  }
+
   p {
     font-family: "Plex Serif";
     font-weight: 400;
     line-height: 1.7;
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-bottom: 1.666rem;
+  }
+
+  p:nth-of-type(2)::first-letter {
+    float: left;
+    padding-right: 10px;
+    padding-top: 6px;
+    font-size: 3.63rem;
   }
 
   blockquote p {
-    padding: 35px;
+    padding: 1.944rem;
     border-left: 2px solid #e8e8e8;
     font-family: "Plex Sans";
     font-weight: 300;
-    font-size: 21px;
+    font-size: 1.166rem;
   }
+
   hr {
     display: block;
     width: 50px;
@@ -55,21 +74,22 @@ const Markdown = styled.div`
     margin: 1em auto;
     padding: 0; 
   }
+  
   ol {
     list-style-position: inside;
     line-height: 1.7;
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    margin-bottom: 1.666rem;
   }
 
   ol li:not(:last-of-type) {
-    margin-bottom: 15px;
+    margin-bottom: 0.833rem;
   }
 
   .gatsby-resp-image-image,
   .gatsby-resp-image-background-image {
     border-radius: 4px;
-    margin-bottom: 50px;
+    margin-bottom: 2.777rem;
   }
 `;
 

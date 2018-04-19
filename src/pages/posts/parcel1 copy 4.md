@@ -1,6 +1,6 @@
 ---
-title: "Post title, this is"
-date: "2018-012-10"
+title: "Aaaand another one"
+date: "2016-012-10"
 featuredImage: "./image4.jpg"
 ---
 # If you’ve ever configured Webpack, Parcel will blow your mind!

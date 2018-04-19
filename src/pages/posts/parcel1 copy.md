@@ -1,12 +1,12 @@
 ---
-title: "Post title, this is"
-date: "2018-012-10"
-featuredImage: "./image4.jpg"
+title: "Aaaand another one"
+date: "2016-012-10"
+featuredImage: "./image2.jpg"
 ---
 # If you’ve ever configured Webpack, Parcel will blow your mind!
 ## And how to hit the ground running with Parcel.
 
-![salted duck eggs](./image2.jpg)
+![salted duck eggs](./image4.jpg)
 
 
 **Lorem ipsum dolor sit amet, nec cu verterem laboramus, sit ea summo dissentiunt. Ad eos ipsum quando. Vix graece virtute mnesarchum et. Vel regione debitis postulant ei, eam reque graeci tamquam no, qui diceret accommodare vituperatoribus ut. Sea ad cibo salutatus, te stet case maiestatis his.**
