@@ -64,6 +64,14 @@ const Markdown = styled.div`
     margin-bottom: 1.666rem;
   }
 
+  strong {
+    font-family: "Plex Serif";
+    font-weight: 500;
+  }
+  em {
+    font-style: italic;
+  }
+
   blockquote p {
     padding: 1.166rem 2.777rem;
     border-left: 2px solid #e8e8e8;
