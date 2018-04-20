@@ -18,6 +18,7 @@
     "gatsby-transformer-remark": "^1.7.40",
     "gatsby-transformer-sharp": "^1.6.23",
     "react-helmet": "^5.2.0",
+    "react-protected-mailto": "^1.0.3",
     "styled-components": "^3.2.5"
   },
   "keywords": [

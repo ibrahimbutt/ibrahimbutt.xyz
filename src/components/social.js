@@ -24,6 +24,7 @@ const Social = ({ title }) => (
     <Link to="www.twitter.com/ibrahimbutt93">twitter</Link>
     <Link to="www.twitter.com/ibrahimbutt93">instagram</Link>
     <Link to="www.twitter.com">rss</Link>
+    <a href="mailto:ibrahimbutt1993@gmail.com">email</a>
   </Container>
 );
 
