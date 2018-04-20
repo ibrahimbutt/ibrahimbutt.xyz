@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import Header from "../components/header";
 import "../sass/main.sass";
 import styled from "styled-components";
+import Header from "../components/header";
+import Social from "../components/social";
 
 const Container = styled.div`
   max-width: 740px;
@@ -20,6 +21,7 @@ const Layout = ({ children, data }) => (
     />
     <Header title={data.site.siteMetadata.title} />
     {children()}
+    <Social/>
   </div>
 );
 
