@@ -60,8 +60,9 @@ const Header = ({ title }) => (
       <Link to="/">{title}</Link>
     </Title>
     <Nav>
-      <Link to="/archive">Home</Link>
-      <Link to="/">About</Link>
+      {}
+      <Link to="/">Home</Link>
+      {/* <Link to="/">About</Link> */}
       <a href="mailto:hey@ibrahimbutt.xyz">Contact</a>
     </Nav>
   </HeaderContainer>

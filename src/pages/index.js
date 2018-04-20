@@ -52,7 +52,6 @@ export default ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Article key={node.id}>
             <Link to={node.fields.slug}>
-              {/* <Image src={node.frontmatter.featuredImage.publicURL}/> */}
               <Title>{node.frontmatter.title}</Title>
               <Text>{node.excerpt}</Text>
             </Link>
