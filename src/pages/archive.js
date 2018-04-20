@@ -62,6 +62,12 @@ const Article = styled.div`
   }
 `;
 
+// childImageSharp {
+//   responsiveSizes (maxWidth: 750) {
+//     src
+//   }
+// }
+
 export default ({ data }) => {
   console.log(data);
   return (
@@ -71,7 +77,8 @@ export default ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Article key={node.id}>
             <Link to={node.fields.slug}>
-              <Image src={node.frontmatter.featuredImage.childImageSharp.resize.src} />
+              {/* <Image src={node.frontmatter.featuredImage.childImageSharp.responsiveSizes.src} /> */}
+              <Image src={node.frontmatter.featuredImage.publicURL}/>
               <Title>{node.frontmatter.title}</Title>
               <Text>{node.excerpt}</Text>
             </Link>
@@ -98,11 +105,7 @@ export const query = graphql`
             title
             date(formatString: "MMMM Do, YYYY")
             featuredImage {
-              childImageSharp {
-                resize(width: 400, jpegProgressive: true, quality: 100)  {
-                  src
-                }
-              }
+              publicURL
             }
           }
           excerpt
