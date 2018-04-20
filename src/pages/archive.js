@@ -3,8 +3,6 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import Header from "../components/header";
 
-
-
 const Image = styled.img`
   width: 100%;
   border-radius: 4px;
@@ -35,7 +33,7 @@ const Title = styled.h2`
   font-weight: 400;
   font-size: 22px;
   line-height: 1.5;
-  color: #000;
+  color: rgba(0, 0, 0, 0.84);
   padding: 20px 10px 10px 10px;
 `;
 
@@ -49,8 +47,13 @@ const Text = styled.h2`
 `;
 
 const Article = styled.div`
+  display: inline-block;
   :hover img {
     opacity: 0.5;
+  }
+  img {
+    height: 250px;
+    object-fit: cover;
   }
 `;
 
@@ -58,25 +61,23 @@ export default ({ data }) => {
   console.log(data);
   return (
     <div>
-    <Header title={data.site.siteMetadata.title} />
-    <Container>
-      
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <Article key={node.id}>
-          <Link to={node.fields.slug}>
-            <Image src={node.frontmatter.featuredImage.publicURL} />
-            <Title>{node.frontmatter.title}</Title>
-            <Text>{node.excerpt}</Text>
-          </Link>
-        </Article>
-      ))}
-    </Container>
+      <Header title={data.site.siteMetadata.title} />
+      <Container>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <Article key={node.id}>
+            <Link to={node.fields.slug}>
+              <Image src={node.frontmatter.featuredImage.publicURL} />
+              <Title>{node.frontmatter.title}</Title>
+              <Text>{node.excerpt}</Text>
+            </Link>
+          </Article>
+        ))}
+      </Container>
     </div>
   );
 };
 
 export const query = graphql`
-
   query IndexQuery {
     site {
       siteMetadata {
@@ -90,7 +91,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date
+            date(formatString: "MMMM Do, YYYY")
             featuredImage {
               publicURL
             }
