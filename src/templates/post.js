@@ -6,25 +6,25 @@ import styled from "styled-components";
 import "prismjs/themes/prism.css";
 
 const Container = styled.div`
+  max-width: 740px;  
   margin: 0 auto;
   padding: 0 20px 50px 20px;
-  max-width: 740px;  
   color: rgba(0, 0, 0, 0.84);
 `;
 
 const Title = styled.div`
+  margin-bottom: 0.833rem;
   font-family: "Plex Sans";
   font-size: 2.369rem;
   font-weight: 600;
   line-height: 1.25;
-  margin-bottom: 0.833rem;
 `;
 
 const Date = styled.p`
+  margin-bottom: 2.777rem;
+  color: #797c80;
   font-family: "Plex Sans";
   font-size: 0.777rem;
-  color: #797c80;
-  margin-bottom: 2.777rem;
 `;
 
 const Markdown = styled.div`
@@ -34,10 +34,10 @@ const Markdown = styled.div`
   h4,
   h5,
   h6 {
+    margin-bottom: 0.833rem;
     font-family: "Plex Sans";
     font-weight: 600;
     line-height: 1.25;
-    margin-bottom: 0.833rem;
   }
 
   h1 {
@@ -54,9 +54,9 @@ const Markdown = styled.div`
 
   p {
     font-family: "Plex Serif";
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.7;
-    font-size: 1rem;
     margin-bottom: 1.666rem;
   }
 
