@@ -11,50 +11,32 @@ const Image = styled.img`
 
 const Container = styled.div`
   max-width: 640px;
-  margin: 50px auto;
-  padding: 0 20px;
-  @media (max-width: 640px) {
-    padding: 1.388rem;
-    margin: 0;
-  }
-  /* padding: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 50px; */
-  /* @media (max-width: 960px) {
-    grid-template-columns: 1fr 1fr;
-    padding: 25px;
-    grid-row-gap: 25px;
-  }
-  @media (max-width: 740px) {
-    grid-template-columns: 1fr;
-    padding: 25px;
-    grid-row-gap: 25px;
-  } */
+  margin: 0 auto;
+  padding: 0 20px 50px 20px;
 `;
 
 const Title = styled.h2`
   font-family: "Plex Sans";
   font-weight: 400;
-  font-size: 22px;
+  font-size: 1.222rem;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.84);
-  margin: 30px 0 10px 0;
+  margin-bottom: 0.555rem;
 `;
 
 const Text = styled.h2`
   font-family: "Plex Sans";
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.833rem;
   line-height: 1.7;
   color: #797c80;
+  margin-bottom: 1.666rem;
 `;
 
 export default ({ data }) => {
   console.log(data);
   return (
     <div>
-      <Header title={data.site.siteMetadata.title} />
       <Container>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>

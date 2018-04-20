@@ -5,33 +5,29 @@ import Header from "../components/header";
 import styled from "styled-components";
 import "prismjs/themes/prism.css";
 
+const Container = styled.div`
+  margin: 0 auto;
+  padding: 0 20px 50px 20px;
+  max-width: 740px;  
+  color: rgba(0, 0, 0, 0.84);
+`;
+
 const Title = styled.div`
   font-family: "Plex Sans";
   font-size: 2.369rem;
   font-weight: 600;
   line-height: 1.25;
-  margin: 50px auto 0.833rem auto;
-  max-width: 740px;
-  color: rgba(0, 0, 0, 0.84);
+  margin-bottom: 0.833rem;
 `;
 
 const Date = styled.p`
   font-family: "Plex Sans";
   font-size: 0.777rem;
   color: #797c80;
-  max-width: 740px;
-  margin: 0 auto;
+  margin-bottom: 2.777rem;
 `;
 
 const Markdown = styled.div`
-  max-width: 740px;
-  margin: 2.777rem auto;
-  color: rgba(0, 0, 0, 0.84);
-  @media (max-width: 740px) {
-    padding: 1.388rem;
-    margin: 0;
-  }
-
   h1,
   h2,
   h3,
@@ -116,15 +112,14 @@ const Markdown = styled.div`
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div>
+    <Container>
       <Helmet
         title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}
       />
-      <Header title={data.site.siteMetadata.title} />
       <Title>{post.frontmatter.title}</Title>
       <Date>{post.frontmatter.date}</Date>
       <Markdown dangerouslySetInnerHTML={{ __html: post.html }} />
-    </div>
+    </Container>
   );
 };
 

@@ -3,17 +3,17 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 
 const HeaderContainer = styled.header`
-  padding: 2.777rem;
-  padding-bottom: 0;
+  padding: 50px;
   display: grid;
   grid-template-columns: min-content auto;
-  @media (max-width: 960px) {
-    padding: 1.388rem;
-    padding-bottom: 0;
+  @media (max-width: 700px) {
+    padding: 50px 20px;
+    max-width: 640px;
+    margin: 0 auto;
   }
   @media (max-width: 400px) {
     grid-template-columns: 1fr;
-    grid-row-gap: 1.111rem;
+    grid-row-gap: 20px;
     justify-content: center;
   }
 `;
@@ -34,7 +34,7 @@ const Nav = styled.nav`
   display: grid;
   grid-template-columns: min-content min-content min-content;
   justify-self: right;
-  grid-column-gap: 1.111rem;
+  grid-column-gap: 20px;
   text-align: right;
   a {
     font-family: "Plex Sans";
