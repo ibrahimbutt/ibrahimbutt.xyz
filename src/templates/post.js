@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import Header from "../components/header";
 import styled from "styled-components";
-import "prismjs/themes/prism-solarizedlight.css";
+import "prismjs/themes/prism.css";
 
 const Title = styled.div`
   font-family: "Plex Sans";
@@ -74,11 +74,10 @@ const Markdown = styled.div`
   .gatsby-highlight {
     font-family: "Plex Mono"
     font-weight: 400;
-    padding: 15px;
-    border: 1px solid #e8e8e8;
-    border-radius; 4px;
-    overflow: auto;
+    font-size: 0.777rem;
+    line-height: 0.777rem;
   }
+
   hr {
     display: block;
     width: 50px;
