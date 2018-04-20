@@ -64,13 +64,6 @@ const Markdown = styled.div`
     margin-bottom: 1.666rem;
   }
 
-  p:nth-of-type(2)::first-letter {
-    float: left;
-    padding-right: 10px;
-    padding-top: 6px;
-    font-size: 3.63rem;
-  }
-
   blockquote p {
     padding: 1.166rem 2.777rem;
     border-left: 2px solid #e8e8e8;
