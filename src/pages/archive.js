@@ -71,7 +71,7 @@ export default ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Article key={node.id}>
             <Link to={node.fields.slug}>
-              <Image src={node.frontmatter.featuredImage.publicURL} />
+              <Image src={node.frontmatter.featuredImage.childImageSharp.resize.src} />
               <Title>{node.frontmatter.title}</Title>
               <Text>{node.excerpt}</Text>
             </Link>
@@ -98,7 +98,11 @@ export const query = graphql`
             title
             date(formatString: "MMMM Do, YYYY")
             featuredImage {
-              publicURL
+              childImageSharp {
+                resize(width: 400, jpegProgressive: true, quality: 100)  {
+                  src
+                }
+              }
             }
           }
           excerpt
