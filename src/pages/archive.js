@@ -10,22 +10,27 @@ const Image = styled.img`
 `;
 
 const Container = styled.div`
-  max-width: 1340px;
-  margin: 0 auto;
-  padding: 50px;
+  max-width: 640px;
+  margin: 50px auto;
+  padding: 0 20px;
+  @media (max-width: 640px) {
+    padding: 1.388rem;
+    margin: 0;
+  }
+  /* padding: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 50px;
-  @media (max-width: 960px) {
+  grid-gap: 50px; */
+  /* @media (max-width: 960px) {
     grid-template-columns: 1fr 1fr;
     padding: 25px;
     grid-row-gap: 25px;
   }
-  @media (max-width: 750px) {
+  @media (max-width: 740px) {
     grid-template-columns: 1fr;
     padding: 25px;
     grid-row-gap: 25px;
-  }
+  } */
 `;
 
 const Title = styled.h2`
@@ -34,7 +39,7 @@ const Title = styled.h2`
   font-size: 22px;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.84);
-  padding: 20px 10px 10px 10px;
+  margin: 30px 0 10px 0;
 `;
 
 const Text = styled.h2`
@@ -43,30 +48,7 @@ const Text = styled.h2`
   font-size: 15px;
   line-height: 1.7;
   color: #797c80;
-  padding: 0 10px;
 `;
-
-const Article = styled.div`
-  display: inline-block;
-  :hover img {
-    opacity: 0.5;
-  }
-  img {
-    height: 250px;
-    object-fit: cover;
-  }
-  @media (max-width: 750px) {
-    img {
-      height: auto;
-    }
-  }
-`;
-
-// childImageSharp {
-//   responsiveSizes (maxWidth: 750) {
-//     src
-//   }
-// }
 
 export default ({ data }) => {
   console.log(data);
@@ -75,14 +57,13 @@ export default ({ data }) => {
       <Header title={data.site.siteMetadata.title} />
       <Container>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Article key={node.id}>
+          <div key={node.id}>
             <Link to={node.fields.slug}>
-              {/* <Image src={node.frontmatter.featuredImage.childImageSharp.responsiveSizes.src} /> */}
-              <Image src={node.frontmatter.featuredImage.publicURL}/>
+              {/* <Image src={node.frontmatter.featuredImage.publicURL}/> */}
               <Title>{node.frontmatter.title}</Title>
               <Text>{node.excerpt}</Text>
             </Link>
-          </Article>
+          </div>
         ))}
       </Container>
     </div>
