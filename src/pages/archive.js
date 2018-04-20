@@ -55,6 +55,11 @@ const Article = styled.div`
     height: 250px;
     object-fit: cover;
   }
+  @media (max-width: 750px) {
+    img {
+      height: auto;
+    }
+  }
 `;
 
 export default ({ data }) => {
