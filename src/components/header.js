@@ -26,7 +26,7 @@ const Title = styled.h1`
   text-transform: lowercase;
   margin: 0;
   a {
-    color: #000;
+    color: rgba(0, 0, 0, 0.84);
   }
 `;
 
@@ -41,12 +41,12 @@ const Nav = styled.nav`
     font-weight: 500;
     font-size: 0.777rem;
     line-height: 0.777rem;
-    color: #797C80;
+    color: #797c80;
     text-transform: lowercase;
     transition: color 0.5s ease;
   }
   a:hover {
-    color: #000;
+    color: rgba(0, 0, 0, 0.84);
   }
 
   @media (max-width: 400px) {
