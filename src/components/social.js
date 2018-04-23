@@ -22,7 +22,6 @@ const Social = ({ title }) => (
   <Container>
     <Link to="www.github.com/ibrahimbutt">github</Link>
     <Link to="www.twitter.com/ibrahimbutt93">twitter</Link>
-    <Link to="www.instagram.com/ibrahimbutt93">instagram</Link>
     <Link to="www.twitter.com">rss</Link>
   </Container>
 );
