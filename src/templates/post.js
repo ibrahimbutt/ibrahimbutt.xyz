@@ -55,6 +55,11 @@ const Markdown = styled.div`
   h4 {
     font-size: 1rem;
   }
+  h5 {
+    font-size: 1rem;
+    font-weight: 500;
+  
+  }
 
   p {
     font-family: "Plex Serif";
@@ -62,6 +67,11 @@ const Markdown = styled.div`
     font-weight: 400;
     line-height: 1.7;
     margin-bottom: 1.666rem;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 4px;
   }
 
   strong {
@@ -72,13 +82,23 @@ const Markdown = styled.div`
     font-style: italic;
   }
 
-  blockquote p {
-    padding: 1.166rem 2.777rem;
+  blockquote {
+    padding: 1.166rem 2.777rem;    
     border-left: 2px solid #e8e8e8;
     font-family: "Plex Sans";
     font-weight: 300;
     font-size: 1.166rem;
+    margin-bottom: 30px;
   }
+
+  blockquote p {
+    font-family: "Plex Sans";
+    font-weight: 300;    
+  }
+  blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
   .gatsby-highlight {
     font-family: "Plex Mono";
     font-weight: 400;
@@ -108,6 +128,11 @@ const Markdown = styled.div`
     width: 100%;
   }
 
+  ul {
+    list-style: none:
+  }
+  
+
   ol li:not(:last-of-type),
   ul li:not(:last-of-type)
    {
@@ -117,10 +142,6 @@ const Markdown = styled.div`
   .task-list-item {
     list-style: none;
   }
-   ul li ul li {
-     text-indent: 8px;
-   }
-
 
   .gatsby-resp-image-image,
   .gatsby-resp-image-background-image {
@@ -156,11 +177,11 @@ const Markdown = styled.div`
   a {
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.84);
-    box-shadow: inset 0 -2px 0px 0px #e8e8e8;
+    box-shadow: inset 0 -2px 0px 0px lightblue;
     transition: all .25s ease;
   }
   a:hover {
-    box-shadow: inset 0 -1rem 0px 0px #e8e8e8;
+    box-shadow: inset 0 -1rem 0px 0px lightblue;
   }
 `;
 
