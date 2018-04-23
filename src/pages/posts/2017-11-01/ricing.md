@@ -1,7 +1,7 @@
 ---
 title: "Ricing Arch Linux"
 date: "2017-11-01"
-featuredImage: "./i4.jpg"
+featuredImage: "./wallpaper.jpg"
 ---
 
 ![Featured Image](./wallpaper.jpg)
@@ -24,7 +24,6 @@ If the term confuses you, you aren't alone. You're probably thinking, what does 
 ## What You'll Be Creating Today
 
 ![The Setup](./finishedsetup.png)
-<!-- ![salted duck eggs](./i1.jpg) -->
 
 There's not a lot going on, right? Yeah, that was the whole point. I mostly use Firefox and Vim. I don't need much. It's my personal setup and what I'm using at the time of writing. If you want more, this guide will teach you the basics and provide a set-up to 'improve' on with your own needs in mind.
 
