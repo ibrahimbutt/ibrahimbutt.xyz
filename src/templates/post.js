@@ -52,6 +52,10 @@ const Markdown = styled.div`
     font-size: 1.333rem;
   }
 
+  h4 {
+    font-size: 1rem;
+  }
+
   p {
     font-family: "Plex Serif";
     font-size: 1rem;
@@ -76,36 +80,87 @@ const Markdown = styled.div`
     font-size: 1.166rem;
   }
   .gatsby-highlight {
-    font-family: "Plex Mono"
+    font-family: "Plex Mono";
     font-weight: 400;
     font-size: 0.777rem;
     line-height: 0.777rem;
+    margin-bottom: 0.833rem;
+  }
+
+  code {
+    font-size: 0.777rem;
   }
 
   hr {
     display: block;
-    width: 50px;
+    width: 100px;
     border: 0;
     border-top: 2px solid #e8e8e8;
     margin: 50px auto 70px auto;
     padding: 0;
   }
 
-  ol {
+  ol, ul {
     list-style-position: inside;
     line-height: 1.7;
     font-size: 1rem;
     margin-bottom: 1.666rem;
+    width: 100%;
   }
 
-  ol li:not(:last-of-type) {
-    margin-bottom: 0.833rem;
+  ol li:not(:last-of-type),
+  ul li:not(:last-of-type)
+   {
+    /* margin-bottom: 0.833rem; */
   }
+
+  .task-list-item {
+    list-style: none;
+  }
+   ul li ul li {
+     text-indent: 8px;
+   }
+
 
   .gatsby-resp-image-image,
   .gatsby-resp-image-background-image {
     border-radius: 4px;
     margin-bottom: 2.777rem;
+  }
+  table, th, td  {
+    color: rgba(0, 0, 0, 0.84);
+    font-family: "Plex Sans";
+    border: 1px solid #e8e8e8;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    padding: 14px 12px 10px 12px;
+    font-size: 0.833rem;
+    
+  }
+  table {
+    width: 100%;
+    margin-bottom: 1.666rem;
+    
+  }
+  th {
+    font-weight: 600;
+  }
+  tr {
+    font-weight: 400;
+  }
+
+  tr:nth-child(2) {
+    background-color: #fafafa;
+  }
+  a {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.84);
+    box-shadow: inset 0 -2px 0px 0px #e8e8e8;
+    transition: all .25s ease;
+  }
+  a:hover {
+    box-shadow: inset 0 -1rem 0px 0px #e8e8e8;
   }
 `;
 

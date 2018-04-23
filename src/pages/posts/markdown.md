@@ -55,7 +55,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           path: node.fields.slug,
           component: path.resolve(`./src/templates/post.js`),
           context: {
-            // Data passed to context is available in page queries as GraphQL variables.
             slug: node.fields.slug,
           },
         })
@@ -66,4 +65,38 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 };
 ``` 
 
-`console.log('Inline Code')`
+
+Inline code: `console.log('Inline Code')`.
+
+### Tables
+
+First Header | Second Header | Third Header
+------------ | ------------- | -------------
+Webpack | Parcel  | Gulp
+Complicated | Ez pz | Straightforward enough
+Second | First  | Last
+
+### Lists
+
+#### Bulleted List
+* One
+* Two
+* Three
+* Four
+
+#### Numbered List
+1. One
+2. Two
+3. Three
+4. Four
+
+#### Checked List
+
+1. [ ] One
+1. [ ] Two
+1. [ ] Three
+1. [ ] Four
+
+### Last but not least, Links!
+
+[Ibrahims Blog](https://www.ibrahimbutt.xyz)
