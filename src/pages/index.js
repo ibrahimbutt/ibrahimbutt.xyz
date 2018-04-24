@@ -77,7 +77,7 @@ export default ({ data }) => {
           <Article key={node.id}>
             <Link to={node.fields.slug}>
               {/* <Image src={node.frontmatter.featuredImage.childImageSharp.responsiveSizes.src} /> */}
-              <Image src={node.frontmatter.featuredImage.publicURL}/>
+              <Image src={node.frontmatter.featuredImage.publicURL} />
               <Title>{node.frontmatter.title}</Title>
               <Text>{node.excerpt}</Text>
             </Link>

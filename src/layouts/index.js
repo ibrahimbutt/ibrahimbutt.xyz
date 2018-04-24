@@ -21,7 +21,7 @@ const Layout = ({ children, data }) => (
     />
     <Header title={data.site.siteMetadata.title} />
     {children()}
-    <Social/>
+    <Social />
   </div>
 );
 
