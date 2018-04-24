@@ -6,7 +6,7 @@ import styled from "styled-components";
 import "prismjs/themes/prism.css";
 
 const Container = styled.div`
-  max-width: 740px;  
+  max-width: 740px;
   margin: 0 auto;
   padding: 0 20px 50px 20px;
   color: rgba(0, 0, 0, 0.84);
@@ -84,7 +84,7 @@ const Markdown = styled.div`
   }
 
   blockquote {
-    padding: 1.166rem 2.777rem;    
+    padding: 1.166rem 2.777rem;
     border-left: 2px solid #e8e8e8;
     font-family: "Plex Sans";
     font-weight: 300;
@@ -107,9 +107,10 @@ const Markdown = styled.div`
     line-height: 0.777rem;
     margin-bottom: 0.833rem;
   }
-
+  
   code {
     font-size: 0.777rem;
+    white-space: pre-wrap !important;
   }
 
   hr {
