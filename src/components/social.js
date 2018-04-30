@@ -25,7 +25,6 @@ const Social = ({ title }) => (
     <a href="https://www.github.com/ibrahimbutt" target="_blank">
       github
     </a>
-    <a href="www.twitter.com">rss</a>
   </Container>
 );
 
