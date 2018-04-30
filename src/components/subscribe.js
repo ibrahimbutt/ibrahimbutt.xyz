@@ -85,17 +85,9 @@ const Submit = styled.button.attrs({
 const Subscribe = ({ title }) => (
   <Container>
     <Text>subscribe to be notified of new posts – zero spam</Text>
-    <Form
-      className="form"
-      action="https://formspree.io/hey@ibrahimbutt.xyz"
-      method="POST"
-    >
-      <Email type="email" name="_replyto" />
-      <input type="hidden" name="_next" value="/" />
-      {/* <input type="text" name="_gotcha" style="display: none" /> */}
-      <Submit type="submit" className="pageclip-form__submit">
-        Subscribe
-      </Submit>
+    <Form name="subscribe-list" netlify>
+      <Email type="email" name="email" />
+      <Submit type="submit">Subscribe</Submit>
     </Form>
   </Container>
 );
