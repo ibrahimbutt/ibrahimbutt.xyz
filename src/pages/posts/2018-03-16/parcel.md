@@ -1,11 +1,11 @@
 ---
 title: "If you’ve ever configured Webpack, Parcel will blow your mind!"
 date: "2018-03-16"
-featuredImage: "featured.png"
+featuredImage: "featured.jpg"
 published: true
 ---
 
-![A meme](./featured.png)
+![A meme](./featured.jpg)
 
 **In this post I will walk you through using Parcel, with Pug, Sass, Babel and PostCSS. With some comparisons to Webpack, as its the most popular module bundler.**
 
