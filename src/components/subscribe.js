@@ -51,12 +51,14 @@ const Email = styled.input.attrs({
   font-weight: 500;
   font-size: 1rem;
   line-height: 0.777rem;
-  padding: 9px 11px 7px 11px;
+  padding: 12px;
   text-transform: lowercase;
   font-family: 'Plex Sans';
   font-weight: 500;
   line-height: 1;
   width: 100%;
+  height: 40px;
+
   -webkit-appearance: none;
   border-radius: 0;
 `;
@@ -73,7 +75,7 @@ const Submit = styled.button.attrs({
   line-height: 14px;
   height: 40px;
   letter-spacing: 1px;
-  padding: 13px 12px 11px 12px;
+  padding: 12px;
   cursor: pointer;
   @media (max-width: 540px) {
     justify-self: center;
