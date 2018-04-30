@@ -1,9 +1,8 @@
-import React from "react";
-import Link from "gatsby-link";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Container = styled.div`
-  font-family: "Plex Sans";
+  font-family: 'Plex Sans';
   text-align: center;
   margin-bottom: 50px;
   font-size: 0.777rem;
@@ -20,9 +19,13 @@ const Container = styled.div`
 `;
 const Social = ({ title }) => (
   <Container>
-    <Link to="www.github.com/ibrahimbutt">github</Link>
-    <Link to="www.twitter.com/ibrahimbutt93">twitter</Link>
-    <Link to="www.twitter.com">rss</Link>
+    <a href="https://www.twitter.com/ibrahimbutt93" target="_blank">
+      twitter
+    </a>
+    <a href="https://www.github.com/ibrahimbutt" target="_blank">
+      github
+    </a>
+    <a href="www.twitter.com">rss</a>
   </Container>
 );
 

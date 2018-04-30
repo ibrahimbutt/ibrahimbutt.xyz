@@ -187,7 +187,7 @@ const Markdown = styled.div`
     box-shadow: inset 0 -2px 0px 0px lightblue;
     transition: all .25s ease;
   }
-  a:hover {
+  a:not(.gatsby-resp-image-link):hover {
     box-shadow: inset 0 -1rem 0px 0px lightblue;
   }
 `;

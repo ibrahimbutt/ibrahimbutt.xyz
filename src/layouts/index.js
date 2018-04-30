@@ -5,6 +5,7 @@ import './index.sass';
 import styled from 'styled-components';
 import Header from '../components/header';
 import Social from '../components/social';
+import Subscribe from '../components/subscribe';
 
 const Container = styled.div`
   max-width: 740px;
@@ -21,6 +22,7 @@ const Layout = ({ children, data }) => (
     />
     <Header title={data.site.siteMetadata.title} />
     {children()}
+    <Subscribe />
     <Social />
   </div>
 );
