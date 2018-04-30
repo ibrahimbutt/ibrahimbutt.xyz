@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "gatsby-link";
-import styled from "styled-components";
+import React from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
   padding: 50px;
@@ -18,7 +18,7 @@ const HeaderContainer = styled.header`
   }
 `;
 const Title = styled.h1`
-  font-family: "Plex Sans";
+  font-family: 'Plex Sans';
   font-weight: 500;
   font-size: 0.777rem;
   text-align: center;
@@ -37,10 +37,10 @@ const Nav = styled.nav`
   grid-column-gap: 20px;
   text-align: right;
   a {
-    font-family: "Plex Sans";
+    font-family: 'Plex Sans';
     font-weight: 500;
-    font-size: 0.777rem;
-    line-height: 0.777rem;
+    font-size: 14px;
+    line-height: 14px;
     color: #797c80;
     text-transform: lowercase;
     transition: color 0.5s ease;

@@ -5,7 +5,7 @@ const Container = styled.div`
   font-family: 'Plex Sans';
   text-align: center;
   margin-bottom: 50px;
-  font-size: 0.777rem;
+  font-size: 14px;
   a {
     color: #797c80;
     transition: color 0.5s ease;
