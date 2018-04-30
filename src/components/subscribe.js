@@ -84,7 +84,7 @@ const Submit = styled.button.attrs({
 
 const Subscribe = ({ title }) => (
   <Container>
-    <Text>subscribe to receive my latests posts straight to your inbox</Text>
+    <Text>subscribe to be notified of my latest posts – zero spam</Text>
     <Form
       className="form"
       action="https://formspree.io/hey@ibrahimbutt.xyz"
