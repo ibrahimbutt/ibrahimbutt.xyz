@@ -103,14 +103,14 @@ const Markdown = styled.div`
   .gatsby-highlight {
     font-family: "Plex Mono";
     font-weight: 400;
-    font-size: 0.777rem;
-    line-height: 0.777rem;
+    font-size: 14px;
+    line-height: 14px;
     margin-bottom: 0.833rem;
     
   }
   
   code {
-    font-size: 0.777rem;
+    font-size: 14px;
     white-space: pre-wrap !important;
   }
   pre[class*="language-"] {
