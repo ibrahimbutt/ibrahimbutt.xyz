@@ -246,7 +246,7 @@ pacaur -S polybar-git
 
 ```bash
 cd ~
-git clone https://github.com/IbrahimButt/Direwolf-Arch-Rice.git
+git clone https://github.com/IbrahimButt/direwolf-arch-rice.git
 cp -r ~/direwolf-arch-rice/.config/ ~/
 
 cp -r ~/direwolf-arch-rice/.Xresources ~/
@@ -297,4 +297,4 @@ Your set up should be identical to mines now.
 
 ## Known Issues
 
-The xrandr setting needs to be set on each boot if you're using startx. Therefore, I've added it as an `exec_always` in the i3 config. Refresh i3 to apply it on each boot. I'm currently in the process of figuring this out. If you have any other issues, feel free to raise it on here..
+The xrandr setting needs to be set on each boot if you're using startx. Therefore, I've added it as an `exec_always` in the i3 config. Refresh i3 to apply it on each boot. I'm currently in the process of figuring this out. If you have any other issues, feel free to raise it on the [repository](https://github.com/IbrahimButt/direwolf-arch-rice).
