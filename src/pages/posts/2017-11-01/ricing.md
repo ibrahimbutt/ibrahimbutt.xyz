@@ -277,13 +277,17 @@ Run `ranger` in the terminal and use arrows keys to navigate. Make your way to `
 
 ### Neofetch System Info and Replace ASCII Logo With Image
 
-`neofetch --w3m --source ~/Pictures/Wal/bg1.jpg`
+```bash
+neofetch --w3m --source ~/Pictures/Wal/bg1.jpg
+```
 
 To customise what is displayed when you run `neofetch` or the above command, comment in/out lines in `~/.config/neofetch/config`.
 
 ### Activate Polybar
 
-`polybar bar`
+```bash
+polybar bar
+```
 
 Go into ranger and type `zh` to display hidden files. Then go to `~/.config/polybar/launch.sh`. Here you'll have a preview of the file. Read it to understand what is happening each time you boot/refresh i3. On line 5, replace `DPI-8` with the source name of your display connection from running `xrandr`.
 
