@@ -5,7 +5,7 @@ featuredImage: "featured.jpg"
 published: true
 ---
 
-![A meme](./featured.jpg)
+![Featured Image](./featured.jpg)
 
 **In this post I will walk you through using Parcel, with Pug, Sass, Babel and PostCSS. With some comparisons to Webpack, as its the most popular module bundler.**
 

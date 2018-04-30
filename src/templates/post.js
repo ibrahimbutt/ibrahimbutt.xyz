@@ -127,7 +127,6 @@ const Markdown = styled.div`
   }
 
   ol, ul {
-    /* list-style-position: inside; */
     padding-left: 18px;
     line-height: 1.7;
     font-size: 1rem;
@@ -139,6 +138,10 @@ const Markdown = styled.div`
     list-style: none:
   }
   
+  li {
+    font-family: "Plex Serif";
+    margin-bottom: 1rem;    
+  }
 
   ol li:not(:last-of-type),
   ul li:not(:last-of-type)
