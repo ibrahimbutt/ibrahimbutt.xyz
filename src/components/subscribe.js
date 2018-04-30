@@ -49,9 +49,9 @@ const Email = styled.input.attrs({
   border-radius: 4px;
   font-family: 'Plex Sans';
   font-weight: 500;
-  font-size: 0.777rem;
+  font-size: 1rem;
   line-height: 0.777rem;
-  padding: 10px 11px 6px 11px;
+  padding: 9px 11px 7px 11px;
   text-transform: lowercase;
   font-family: 'Plex Sans';
   font-weight: 500;
