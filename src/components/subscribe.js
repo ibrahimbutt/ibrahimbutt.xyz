@@ -87,11 +87,11 @@ const Subscribe = ({ title }) => (
     <Text>subscribe to receive my latests posts straight to your inbox</Text>
     <Form
       className="form"
-      action="https://formspree.io/ibrahimbutt1993@gmail.com"
+      action="https://formspree.io/hey@ibrahimbutt.xyz"
       method="POST"
     >
       <Email type="email" name="_replyto" />
-      <input type="hidden" name="_next" value="/under-construction/" />
+      <input type="hidden" name="_next" value="/" />
       {/* <input type="text" name="_gotcha" style="display: none" /> */}
       <Submit type="submit" className="pageclip-form__submit">
         Subscribe
