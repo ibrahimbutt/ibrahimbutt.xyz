@@ -85,9 +85,13 @@ const Submit = styled.button.attrs({
 const Subscribe = ({ title }) => (
   <Container>
     <Text>subscribe to be notified of new posts – zero spam</Text>
-    <Form name="subscribe-list" method="POST" netlify>
+    <Form
+      name="subscribe-list"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
       <Email type="email" name="email" />
-      <div data-netlify-recaptcha />
       <Submit type="submit">Subscribe</Submit>
     </Form>
   </Container>
