@@ -69,8 +69,8 @@ const Submit = styled.button.attrs({
   text-transform: lowercase;
   font-family: 'Plex Sans';
   font-weight: 500;
-  font-size: 0.777rem;
-  line-height: 0.777rem;
+  font-size: 14px;
+  line-height: 14px;
   height: 40px;
   letter-spacing: 1px;
   padding: 13px 12px 11px 12px;
