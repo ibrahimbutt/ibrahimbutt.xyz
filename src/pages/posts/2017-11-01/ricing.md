@@ -247,9 +247,9 @@ pacaur -S polybar-git
 ```bash
 cd ~
 git clone https://github.com/IbrahimButt/Direwolf-Arch-Rice.git
-cp -r ~/Direwolf-Arch-Rice/.config/ ~/
+cp -r ~/direwolf-arch-rice/.config/ ~/
 
-cp -r ~/Direwolf-Arch-Rice/.Xresources ~/
+cp -r ~/direwolf-arch-rice/.Xresources ~/
 xrdb .Xresources
 ```
 
