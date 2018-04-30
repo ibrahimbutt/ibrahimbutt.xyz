@@ -32,7 +32,7 @@ const Title = styled.h1`
 
 const Nav = styled.nav`
   display: grid;
-  grid-template-columns: min-content min-content min-content;
+  grid-template-columns: min-content min-content;
   justify-self: right;
   grid-column-gap: 20px;
   text-align: right;
