@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import "../sass/main.sass";
-import styled from "styled-components";
-import Header from "../components/header";
-import Social from "../components/social";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import './index.sass';
+import styled from 'styled-components';
+import Header from '../components/header';
+import Social from '../components/social';
 
 const Container = styled.div`
   max-width: 740px;
@@ -15,8 +15,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: "description", content: "Ibrahim Butts Blog" },
-        { name: "keywords", content: "javascript, programming, medium" }
+        { name: 'description', content: 'Ibrahim Butts Blog' },
+        { name: 'keywords', content: 'javascript, programming, medium' }
       ]}
     />
     <Header title={data.site.siteMetadata.title} />

@@ -6,7 +6,6 @@ featuredImage: "./wallpaper.jpg"
 
 ![Featured Image](./wallpaper.jpg)
 
-
 ## Who is this guide for?
 
 Those who are interested in ricing or would like to know what it is, whether they are experienced Linux users or complete beginners.
@@ -43,7 +42,7 @@ If you've heard of Arch, you may have heard the installation isn't so simple. Yo
 
 Installing Arch manually is outside the scope of this guide. If you prefer to install it manually, visit the [installation guide](https://wiki.archlinux.org/index.php/installation_guide). Otherwise, use [Arch-Anywhere](https://arch-anywhere.org/download/).
 
-*Tip: To save time, download Arch/Arch-Anywhere while you read on.*
+_Tip: To save time, download Arch/Arch-Anywhere while you read on._
 
 #### Window Manager
 
@@ -83,24 +82,25 @@ Personally, I love application launchers. It makes your workflow noticeably more
 
 ![Dmenu and ranger in action](./ranger-dmenu.png)
 
-*Note: i3 by default does not have a feature where you can see all your applications.*
+_Note: i3 by default does not have a feature where you can see all your applications._
 
 #### Themeing
 
-Two ways in which the colour scheme can be altered is through the `.Xresources` file and Wal. We will be using the Python version of Wal, called  [Pywal](https://github.com/dylanaraps/pywal).
+Two ways in which the colour scheme can be altered is through the `.Xresources` file and Wal. We will be using the Python version of Wal, called [Pywal](https://github.com/dylanaraps/pywal).
 
 Taken from the [Arch Wiki](https://wiki.archlinux.org/index.php/x_resources):
 
 > Xresources is a user-level configuration dotfile, typically located at `~/.Xresources`. It can be used to set X resources, which are configuration parameters for X client applications.
 
-
 > They can do many operations, including:
+>
 > * defining terminal colours
 > * configuring terminal preferences
 > * setting DPI, antialiasing, hinting and other X font settings
-> ...
+>   ...
 
 Taken from the Pywal repository:
+
 > `wal` is a script that takes an image (or a directory of images), generates a colour scheme (using `imagemagick`) and then changes all of your open terminal's colours to the new colour scheme on the fly. wal then caches each generated colour scheme so that cycling through wallpapers while changing colour schemes is instantaneous.
 
 > `wal` also merges the new colour scheme into the Xresources database so that programs on your system such as `Rofi` or `i3` use the new colours automatically. `wal` finally exports the colors into various formats so that you can use the colours in web pages, scripts, other programs etc.
@@ -147,7 +147,7 @@ Download and use [Etcher](https://etcher.io/). Select the ISO file and USB, then
 
 ![Etcher Usage.](https://etcher.io/static/screenshot.gif)
 
-*Note: The '.gif' above is taken directly from the Etcher site, so excuse the Live Image name.*
+_Note: The '.gif' above is taken directly from the Etcher site, so excuse the Live Image name._
 
 #### Linux
 
@@ -174,7 +174,6 @@ Open the terminal by pressing `mod+enter`, then run sudo wifi-menu to create a w
 ### Screen Resolution
 
 Your screen resolution may be incorrect. Run `xrandr` and identify your display. Then run `xrandr --output <source_name> --mode 2560x1440 --rate <refresh_rate>` For me it is `xrandr --output DP1-8 --mode 2560x1440 --rate 59.95`. If you have multiple monitors, check out the [documentation](https://wiki.archlinux.org/index.php/Xrandr). The xrandr setting isn't permanent for now, we'll get to that later.
-
 
 ### Guide Dependencies
 
@@ -214,15 +213,18 @@ rm -r /tmp/pacaur_install
 Python 3.5 or above is required, so ensure it's installed by running `python -V`. If it isn't, install it: `pacaur -S python`.
 
 When you're good to go:
+
 ```bash
 sudo pacman -S feh imagemagick python-pip
 pacaur -S python-pywal
 ```
-*Note: You don't need to view package build. If you decide to view it, it'll be displayed in Vim. Type `:q` to exit Vim.*
+
+_Note: You don't need to view package build. If you decide to view it, it'll be displayed in Vim. Type `:q` to exit Vim._
 
 ![Wallpaper](./wallpaper.jpg)
 
 Right click on the image above and save as `bg1.jpg`. Now do the following:
+
 ```bash
 cd ~
 mkdir -p ~/Pictures/Wal/
@@ -233,6 +235,7 @@ wal -i ~/Pictures/Wal/bg1.jpg
 #### Install Polybar
 
 First you'll need to install the dependencies and then Polybar itself:
+
 ```bash
 sudo pacman -S cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm jsoncpp
 pacaur -S polybar-git
@@ -248,6 +251,7 @@ cp -r ~/Direwolf-Arch-Rice/.config/ ~/
 cp -r ~/Direwolf-Arch-Rice/.Xresources ~/
 xrdb .Xresources
 ```
+
 You will need to run wal -i ~/Pictures/Wal/bg1.jpg again here, so Urxvt uses the colorscheme.
 
 Refresh i3 by pressing mod+r.
@@ -261,6 +265,7 @@ Only terminals and windows opened after this point will have those two changes a
 Refresh i3 to load changes.
 
 ### Make Changes To i3 Config
+
 Read through the whole config file and understand what's happening. Change anything that's necessary. The comments will give you hints as to what you may want to change. Do not skip this step. It'll teach you got to use i3.
 
 ### Preview Images In Ranger
@@ -288,5 +293,3 @@ Your set up should be identical to mines now.
 ## Known Issues
 
 The xrandr setting needs to be set on each boot if you're using startx. Therefore, I've added it as an `exec_always` in the i3 config. Refresh i3 to apply it on each boot. I'm currently in the process of figuring this out. If you have any other issues, feel free to raise it on here..
-
-

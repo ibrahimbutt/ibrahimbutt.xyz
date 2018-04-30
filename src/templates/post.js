@@ -1,9 +1,9 @@
-import React from "react";
-import Link from "gatsby-link";
-import Helmet from "react-helmet";
-import Header from "../components/header";
-import styled from "styled-components";
-import "prismjs/themes/prism.css";
+import React from 'react';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
+import Header from '../components/header';
+import styled from 'styled-components';
+import 'prismjs/themes/prism.css';
 
 const Container = styled.div`
   max-width: 740px;
@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const Title = styled.div`
   margin-bottom: 0.833rem;
-  font-family: "Plex Sans";
+  font-family: 'Plex Sans';
   font-size: 2.369rem;
   font-weight: 600;
   line-height: 1.25;
@@ -23,7 +23,7 @@ const Title = styled.div`
 const Date = styled.p`
   margin-bottom: 2.777rem;
   color: #797c80;
-  font-family: "Plex Sans";
+  font-family: 'Plex Sans';
   font-size: 0.777rem;
 `;
 
@@ -106,11 +106,15 @@ const Markdown = styled.div`
     font-size: 0.777rem;
     line-height: 0.777rem;
     margin-bottom: 0.833rem;
+    
   }
   
   code {
     font-size: 0.777rem;
     white-space: pre-wrap !important;
+  }
+  pre[class*="language-"] {
+    border-radius: 4px;
   }
 
   hr {
@@ -123,7 +127,8 @@ const Markdown = styled.div`
   }
 
   ol, ul {
-    list-style-position: inside;
+    /* list-style-position: inside; */
+    padding-left: 18px;
     line-height: 1.7;
     font-size: 1rem;
     margin-bottom: 1.666rem;
@@ -173,10 +178,10 @@ const Markdown = styled.div`
     font-weight: 400;
   }
 
-  tr:nth-child(2) {
+  tr:nth-child(even) {
     background-color: #fafafa;
   }
-  a {
+  a:not(.gatsby-resp-image-link) {
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.84);
     box-shadow: inset 0 -2px 0px 0px lightblue;
