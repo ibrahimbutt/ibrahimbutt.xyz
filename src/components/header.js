@@ -20,9 +20,9 @@ const HeaderContainer = styled.header`
 const Title = styled.h1`
   font-family: 'Plex Sans';
   font-weight: 500;
-  font-size: 0.777rem;
+  font-size: 14px;
   text-align: center;
-  line-height: 0.777rem;
+  line-height: 14px;
   text-transform: lowercase;
   margin: 0;
   a {
