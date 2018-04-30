@@ -127,7 +127,7 @@ const Markdown = styled.div`
   }
 
   ol, ul {
-    padding-left: 18px;
+    padding-left: 26px;
     line-height: 1.7;
     font-size: 1rem;
     margin-bottom: 1.666rem;
