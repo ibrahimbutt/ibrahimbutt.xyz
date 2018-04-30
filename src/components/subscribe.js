@@ -16,10 +16,11 @@ const Container = styled.div`
   }
   a:hover {
     color: rgba(0, 0, 0, 0.84);
+    cursor: pointer;
   }
 `;
 
-const Text = styled.p`
+const Text = styled.a`
   padding-bottom: 30px;
   font-family: 'Plex Sans';
   font-weight: 400;
@@ -82,18 +83,26 @@ const Submit = styled.button.attrs({
   }
 `;
 
+// const Subscribe = ({ title }) => (
+//   <Container>
+//     <Text>subscribe to be notified of new posts – zero spam</Text>
+//     <Form
+//       name="subscribe-list"
+//       method="POST"
+//       data-netlify="true"
+//       data-netlify-honeypot="bot-field"
+//     >
+//       <Email type="email" name="email" />
+//       <Submit type="submit">Subscribe</Submit>
+//     </Form>
+//   </Container>
+// );
+
 const Subscribe = ({ title }) => (
   <Container>
-    <Text>subscribe to be notified of new posts – zero spam</Text>
-    <Form
-      name="subscribe-list"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
-      <Email type="email" name="email" />
-      <Submit type="submit">Subscribe</Submit>
-    </Form>
+    <Text href="http://eepurl.com/dtdbST">
+      subscribe to be notified of new posts – zero spam
+    </Text>
   </Container>
 );
 
