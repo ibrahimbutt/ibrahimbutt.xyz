@@ -2,6 +2,7 @@
 title: "Ricing Arch Linux"
 date: "2017-11-01"
 featuredImage: "./wallpaper.jpg"
+published: true
 ---
 
 ![Featured Image](./wallpaper.jpg)

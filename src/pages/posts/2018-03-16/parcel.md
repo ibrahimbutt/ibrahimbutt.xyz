@@ -2,6 +2,7 @@
 title: "If you’ve ever configured Webpack, Parcel will blow your mind!"
 date: "2018-03-16"
 featuredImage: "featured.png"
+published: true
 ---
 
 ![A meme](./featured.png)

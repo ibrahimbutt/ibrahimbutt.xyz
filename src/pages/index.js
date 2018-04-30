@@ -1,14 +1,13 @@
-import React from "react";
-import Link from "gatsby-link";
-import styled from "styled-components";
-import Header from "../components/header";
+import React from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
+import Header from '../components/header';
 
 const Image = styled.img`
   width: 100%;
   border-radius: 4px;
   transition: opacity 0.25s ease;
 `;
-
 
 const Container = styled.div`
   max-width: 640px;
@@ -19,14 +18,23 @@ const Container = styled.div`
 const Article = styled.div`
   a {
     transition: opacity 0.5s ease;
-  } 
+  }
   a:hover {
-    opacity: .65;
+    opacity: 0.65;
   }
 `;
 
+const Date = styled.p`
+  font-family: 'Plex Sans';
+  font-weight: 400;
+  font-size: 0.777rem;
+  color: #797c80;
+  opacity: 0.4;
+  margin-bottom: 0.277rem;
+`;
+
 const Title = styled.h2`
-  font-family: "Plex Sans";
+  font-family: 'Plex Sans';
   font-weight: 400;
   font-size: 1.222rem;
   line-height: 1.5;
@@ -36,7 +44,7 @@ const Title = styled.h2`
 `;
 
 const Text = styled.h2`
-  font-family: "Plex Sans";
+  font-family: 'Plex Sans';
   font-weight: 400;
   font-size: 0.833rem;
   line-height: 1.7;
@@ -49,19 +57,18 @@ export default ({ data }) => {
   return (
     <div>
       <Container>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Article key={node.id}>
-            <Link to={node.fields.slug}>
-<<<<<<< HEAD
-              {/* <Image src={node.frontmatter.featuredImage.childImageSharp.responsiveSizes.src} /> */}
-              <Image src={node.frontmatter.featuredImage.publicURL} />
-=======
->>>>>>> parent of 5ea3d62... Redo Archive layout
-              <Title>{node.frontmatter.title}</Title>
-              <Text>{node.excerpt}</Text>
-            </Link>
-          </Article>
-        ))}
+        {data.allMarkdownRemark.edges.map(
+          ({ node }) =>
+            node.frontmatter.published && (
+              <Article key={node.id}>
+                <Link to={node.fields.slug}>
+                  <Date>{node.frontmatter.date}</Date>
+                  <Title>{node.frontmatter.title}</Title>
+                  <Text>{node.excerpt}</Text>
+                </Link>
+              </Article>
+            )
+        )}
       </Container>
     </div>
   );
@@ -82,6 +89,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMM D, Y")
+            published
             featuredImage {
               publicURL
             }
