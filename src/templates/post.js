@@ -105,7 +105,7 @@ const Markdown = styled.div`
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    margin-bottom: 0.833rem;
+    margin-bottom: 1.666rem;
     
   }
   
