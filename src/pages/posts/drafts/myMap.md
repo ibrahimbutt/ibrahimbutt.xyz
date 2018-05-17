@@ -2,7 +2,7 @@
 title: "Understand how JavaScripts Map by making your own"
 date: "2018-05-07"
 featuredImage: "./feat2.jpg"
-published: true
+published: false
 ---
 
 ![Featured Image](./feat2.jpg)
