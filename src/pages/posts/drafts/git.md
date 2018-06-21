@@ -2,7 +2,7 @@
 title: "How to use git and GitHub in a team and stay organised"
 date: "2018-05-07"
 featuredImage: "./feat2.jpg"
-published: true
+published: false
 ---
 
 ![Featured Image](./feat2.jpg)
