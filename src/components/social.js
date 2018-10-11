@@ -19,8 +19,8 @@ const Container = styled.div`
 `;
 const Social = ({ title }) => (
   <Container>
-    <a href="https://www.twitter.com/ibrahimbutt93" target="_blank">
-      twitter
+    <a href="https://medium.com/@ibrahimbutt" target="_blank">
+      medium
     </a>
     <a href="https://www.github.com/ibrahimbutt" target="_blank">
       github
