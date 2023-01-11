@@ -15,7 +15,7 @@
     "gatsby-remark-prismjs": "^1.2.24",
     "gatsby-remark-smartypants": "^1.4.12",
     "gatsby-source-filesystem": "^1.5.31",
-    "gatsby-transformer-remark": "^1.7.40",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^1.6.23",
     "react-helmet": "^5.2.0",
     "react-protected-mailto": "^1.0.3",
